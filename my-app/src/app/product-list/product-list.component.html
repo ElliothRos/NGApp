@@ -41,3 +41,16 @@
         </tbody>
     </table>
 </div>
+
+<!-- <div class="mt-5">
+    <p>{{'Welcome to ' + 'Angular data binding.'}}</p>
+    <p>{{100*80}}</p>
+    <p style.color="{{color}}">This is colored</p>
+</div> -->
+
+<div class="mt-5">
+    <p [innerText]="title"></p>
+    <p [innerText]="getTitle()"></p>
+    <p [innerText]="'Hello and welcome to ' + ' Angular data binding'"></p>
+    <p [style.color]="color">This is colored</p>
+</div>

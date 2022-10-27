@@ -9,6 +9,11 @@ export class ProductListComponent implements OnInit {
 
   title: string = "Product Management System";
   color: string = "orange";
+  imageWidth: number = 40;
+  imageMargin: number = 2;
+  areImagesVisible: boolean = true;
+  listFilter: string = "";
+
   products: any[] = [
     {
       "productId": 1,
@@ -49,6 +54,11 @@ export class ProductListComponent implements OnInit {
 
   getTitle(): string {
     return this.title;
+  }
+
+  toggleImages(): void {
+    console.log("Toggle Images button clicked...");
+    this.areImagesVisible = !this.areImagesVisible;
   }
 
 }
